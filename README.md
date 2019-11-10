@@ -1,2 +1,2 @@
-# authfy
-Библиотека для авторизации через сервисы
+![Logo package authfy](./logo.png)
+

@@ -1,10 +1,32 @@
 {
   "name": "authfy",
+  "description": "Light version for authorization through social networks and services",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:Alexsandrrh/authfy.git",
-  "author": "Alexsandrrh <sadovspbsasha@outlook.com>",
+  "keywords": [
+    "oauth2",
+    "authorization",
+    "authorize",
+    "tokens",
+    "applet",
+    "authfy",
+    "auth",
+    "express",
+    "socials"
+  ],
+  "author": {
+    "name": "Alexsandrrh",
+    "email": "sadovspbsasha@outlook.com",
+    "url": "https://alexsandrrh.surge.sh/"
+  },
   "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
   "private": false,
   "scripts": {
     "dev": "nodemon ./tests/index.js"
