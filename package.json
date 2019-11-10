@@ -1,0 +1,25 @@
+{
+  "name": "authfy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Alexsandrrh/authfy.git",
+  "author": "Alexsandrrh <sadovspbsasha@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon ./tests/index.js"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "eslint": "^6.6.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "query-string": "^6.8.3"
+  }
+}
