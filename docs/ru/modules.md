@@ -6,19 +6,37 @@
 ```javascript
 // Импротируем модуль
 const Authfy = require("authfy");
+const authfy = new Authfy();
+// =================
 
 /*
  * Данный метод у модуля Authfy отвечает
  * за регистрацию и запоминания Applet-ов для подключения к сервисам
- * Позже о нем будет рассказано...
+ * Позже о нем будет рассказано и показано, что он делает...
  */
-Authfy.use(new Applet());
 
-Authfy.verify();
+authfy.use(new Applet());
 
-Authfy.try();
+// =================
 
-Authfy.finally();
+/*
+ * Метод try делает редирект на страницу сервиса с помощью которого,
+ * хотят авторизоваться и получает ключи для дальнейших действий
+ */
+
+route.get("/oauth/authfy", authfy.try("NAME_APPLET"));
+
+// =================
+
+/*
+ * Метод finally заканчиевает процесс авторизации и отдает данные в том
+ * виде в котором вы указали в методу authfy.verify();
+ */
+
+authfy.verify(new Verify());
+
+// Роутер на который вас перебросит
+route.get("/oauth/authfy/callback", authfy.finally("NAME_APPLET"));
 ```
 
 - **Applet**
