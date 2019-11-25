@@ -35,6 +35,8 @@ authfy.use(
     },
     async (accessToken, refreshToken, data) => {
       try {
+
+        console.log(data)
         return {
           id: data.id
         };
